@@ -5,7 +5,7 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 .header {
-    background-image: url('img/backgr-city.png');
+    background-image: url('img/bg-header.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -27,13 +27,9 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 }
-
-
-
 .header-box-text {
     display: flex;
-    
-    align-content: center;
+    align-items: center;
     flex-direction: column;
     margin:0 auto; 
     color: #4f4d6a;
@@ -77,13 +73,9 @@ body {
     line-height: 38px;
     text-transform: uppercase;
 }
-
 .header-box-btns {
     margin-top: 45px;
-    
-
 }
-
 .btn-see {
     margin-right: 20px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.13), inset 0 2px 0 rgba(255, 255, 255, 0.75);
@@ -97,7 +89,6 @@ body {
     background-color: #ebebeb;
     background-image: linear-gradient(to top, #9c8394 0%, #d0c2ca 100%);
 }
-
 button.btn-header {
     padding: 15px 55px;
     border-radius: 35px;
@@ -107,10 +98,6 @@ button.btn-header {
     color: #ffffff;
     outline: none ;
 }
-
-
-
-
 
 /* MAIN Start */
 .main {
@@ -123,15 +110,12 @@ button.btn-header {
     padding: 70px 0px 100px 0px;
     font-style: italic;
 }
-
 .main-title {
     font-size: 72px;
 }
 .main-text-decor {
     margin: 0 auto;
 }
-
-
 .box-themes {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -190,4 +174,40 @@ button.btn-header {
 }
 .copyright-text {
     margin-top: 55px;
+}
+
+/* MEDIA Start */
+@media all and (max-width: 1000px) {
+    .header-main-text::before,
+    .header-main-text::after {
+        width: 250px;
+    }
+    .header-title {
+        font-size: 85px;
+    }
+    
+}
+@media all and (max-width: 770px) {
+    .header-main-text::before,
+    .header-main-text::after {
+        width: 150px;
+    }
+    .header-title {
+        font-size: 45px;
+    }
+    .header-text {
+        font-size: 16px;
+    }
+}
+@media all and (max-width: 490px) {
+    .header-main-text::before,
+    .header-main-text::after {
+        width: 80px;
+    }
+    .header-title {
+        font-size: 25px;
+    }
+    .header-main-text {
+        font-size: 18px;
+    }
 }
